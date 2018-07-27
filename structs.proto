@@ -2,6 +2,10 @@ syntax = "proto3";
 
 package vivaldi;
 
+option go_package = "github.com/hexablock/vivaldi";
+
+import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+
 // Coordinate is a specialized structure for holding network coordinates for the
 // Vivaldi-based coordinate mapping algorithm. All of the fields should be public
 // to enable this to be serialized. All values in here are in units of seconds.
